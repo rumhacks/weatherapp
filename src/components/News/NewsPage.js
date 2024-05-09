@@ -41,7 +41,7 @@ function NewsPage() {
         <p>Loading...</p>
       ) : (
         <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', flexWrap: 'wrap' }}>
-          {newsData.map((article, index) => (
+          {newsData.length > 0 && newsData.map((article, index) => (
             <div key={index} style={{ width: '300px', margin: '10px', padding: '10px', backgroundColor: '#596571', borderRadius: '8px' }}>
               <h2>{article.title}</h2>
               <img
